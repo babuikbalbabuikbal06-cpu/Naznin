@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ikbal ❤️ Naznin | Anniversary</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans Bengali", Arial, sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#ff8fba,#ffc7dc);
+    min-height:100vh;
+    overflow:hidden;
+    color:#7a1745;
+}
+
+.screen{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+    text-align:center;
+    opacity:0;
+    visibility:hidden;
+    transform:scale(.9);
+    transition:all .7s ease;
+}
+
+.screen.active{
+    opacity:1;
+    visibility:visible;
+    transform:scale(1);
+}
+
+.card{
+    width:min(500px,95%);
+    padding:35px 25px;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(12px);
+    border-radius:30px;
+    box-shadow:0 15px 50px rgba(150,30,80,.25);
+    border:2px solid rgba(255,255,255,.7);
+}
+
+h1{
+    font-size:38px;
+    color:#d62970;
+    margin-bottom:15px;
+}
+
+h2{
+    font-size:27px;
+    color:#c51f63;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.9;
+}
+
+.date{
+    margin:15px 0 25px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+button{
+    margin-top:25px;
+    padding:13px 30px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(90deg,#ff4081,#e91e63);
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 7px 20px rgba(233,30,99,.3);
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.photo{
+    width:100%;
+    max-width:330px;
+    height:350px;
+    object-fit:cover;
+    border-radius:25px;
+    border:6px solid white;
+    box-shadow:0 10px 30px rgba(150,20,80,.25);
+    margin:10px auto 5px;
+}
+
+.wish{
+    max-height:330px;
+    overflow:auto;
+    text-align:center;
+    padding:5px;
+}
+
+.big-heart{
+    font-size:75px;
+    animation:heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.2)}
+}
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:25px;
+    animation:float 6s linear forwards;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+.sparkle{
+    position:fixed;
+    pointer-events:none;
+    animation:sparkle 2s linear forwards;
+}
+
+@keyframes sparkle{
+    0%{transform:scale(0);opacity:1}
+    100%{transform:scale(2) translateY(-80px);opacity:0}
+}
+
+.small{
+    font-size:15px;
+    margin-top:10px;
+    opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SCREEN 1 -->
+<section class="screen active" id="screen1">
+    <div class="card">
+        <div class="big-heart">💖</div>
+        <h1>একটা ছোট্ট সারপ্রাইজ...</h1>
+        <p>তোমার জন্য ভালোবাসা দিয়ে তৈরি করা এই ছোট্ট গল্পটা শুরু করা যাক। 🌸</p>
+        <button onclick="nextScreen(2)">Continue 💕</button>
+    </div>
+</section>
+
+
+<!-- SCREEN 2 -->
+<section class="screen" id="screen2">
+    <div class="card">
+        <h2>🌹 Ikbal & Naznin 🌹</h2>
+
+        <img src="couple.jpg" class="photo" alt="Ikbal & Naznin">
+
+        <div class="date">
+            💍 26 September 2019 💍
+        </div>
+
+        <p>একসাথে কাটানো ভালোবাসার সুন্দর কিছু বছর... ❤️</p>
+
+        <button onclick="nextScreen(3)">Continue 📸</button>
+    </div>
+</section>
+
+
+<!-- SCREEN 3 -->
+<section class="screen" id="screen3">
+    <div class="card">
+        <h2>💌 তোমার জন্য কিছু কথা</h2>
+
+        <div class="wish">
+            <p>
+            তোমার সাথে কাটানো প্রতিটি মুহূর্ত আমার জীবনের সবচেয়ে সুন্দর স্মৃতিগুলোর একটি।
+            হাসি, অভিমান, আনন্দ আর ছোট ছোট ঝগড়ার মাঝেও আমাদের ভালোবাসাটা যেন প্রতিদিন
+            আরও গভীর হয়েছে। ❤️ তুমি পাশে থাকলে সাধারণ দিনও আমার কাছে বিশেষ হয়ে যায়।
+            জীবনের যত কঠিন সময় আসুক, আমরা যেন সবসময় একে অপরের হাত ধরে থাকতে পারি।
+            তোমার হাসি যেন সবসময় এমনই সুন্দর থাকে, আর আমাদের ভালোবাসা যেন সময়ের সাথে
+            আরও শক্ত হয়। আল্লাহ আমাদের সম্পর্ককে ভালোবাসা, শান্তি ও সুখে ভরিয়ে দিন।
+            আমাদের আগামী দিনগুলো হোক আরও সুন্দর, আরও আনন্দের এবং আরও ভালোবাসায় পূর্ণ।
+            Happy Anniversary, Naznin! তোমাকে অনেক ভালোবাসি। 💖🌹
+            </p>
+        </div>
+
+        <button onclick="nextScreen(4)">Continue 💌</button>
+    </div>
+</section>
+
+
+<!-- SCREEN 4 -->
+<section class="screen" id="screen4">
+    <div class="card">
+        <div class="big-heart">🥰</div>
+
+        <h1>Happy Anniversary!</h1>
+
+        <h2>Ikbal ❤️ Naznin</h2>
+
+        <p>
+            26 September 2019 থেকে শুরু হওয়া আমাদের এই সুন্দর পথচলা
+            চিরকাল এমনই ভালোবাসায় ভরে থাকুক। 🌸
+        </p>
+
+        <p style="margin-top:15px;">
+            💕 Forever Together 💕
+        </p>
+
+        <button onclick="celebrate()">One More Surprise 🎁</button>
+    </div>
+</section>
+
+
+<script>
+
+let current = 1;
+
+function nextScreen(number){
+
+    document.getElementById("screen" + current)
+        .classList.remove("active");
+
+    document.getElementById("screen" + number)
+        .classList.add("active");
+
+    current = number;
+
+    createHearts();
+}
+
+function createHearts(){
+
+    for(let i=0;i<12;i++){
+
+        const heart = document.createElement("div");
+
+        heart.className="heart";
+
+        const emojis=["❤️","💕","💖","💗","🌸","🌹","✨"];
+
+        heart.innerHTML =
+            emojis[Math.floor(Math.random()*emojis.length)];
+
+        heart.style.left =
+            Math.random()*100 + "vw";
+
+        heart.style.animationDuration =
+            (4 + Math.random()*4) + "s";
+
+        heart.style.fontSize =
+            (18 + Math.random()*20) + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },8000);
+    }
+}
+
+function celebrate(){
+
+    for(let i=0;i<50;i++){
+
+        setTimeout(()=>{
+
+            const s=document.createElement("div");
+
+            s.className="sparkle";
+
+            s.innerHTML=
+                ["💖","💕","✨","🌸","💗","🥰","🌹"]
+                [Math.floor(Math.random()*7)];
+
+            s.style.left=Math.random()*100+"vw";
+            s.style.top=Math.random()*100+"vh";
+            s.style.fontSize=(15+Math.random()*30)+"px";
+
+            document.body.appendChild(s);
+
+            setTimeout(()=>{
+                s.remove();
+            },2000);
+
+        },i*50);
+    }
+}
+
+createHearts();
+
+</script>
+
+</body>
+</html>
